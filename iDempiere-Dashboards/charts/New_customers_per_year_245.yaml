@@ -1,0 +1,71 @@
+slice_name: New customers  per year
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 36__table
+  viz_type: big_number_total
+  slice_id: 245
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: new_bp_year
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 917
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: LONGINTEGER
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(new_bp_year)
+    optionName: metric_8us71tqrqol_3mg530yzakv
+    sqlExpression: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_85e56u0suu_2zccayhdxyq
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: ad_client_id = @ad_client_id
+    subject: null
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_zw621yckxxc_w5mjxmkf38
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: year = @year
+    subject: null
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 12
+  - 19
+query_context: '{"datasource":{"id":36,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":"(ad_client_id
+  = @ad_client_id) AND (year = @year)"},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"new_bp_year","description":null,"expression":null,"filterable":true,"groupby":true,"id":917,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"LONGINTEGER","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(new_bp_year)","optionName":"metric_8us71tqrqol_3mg530yzakv","sqlExpression":null}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"36__table","viz_type":"big_number_total","slice_id":245,"metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"new_bp_year","description":null,"expression":null,"filterable":true,"groupby":true,"id":917,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"LONGINTEGER","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(new_bp_year)","optionName":"metric_8us71tqrqol_3mg530yzakv","sqlExpression":null},"adhoc_filters":[{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_85e56u0suu_2zccayhdxyq","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"ad_client_id
+  = @ad_client_id","subject":null},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_zw621yckxxc_w5mjxmkf38","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"year
+  = @year","subject":null}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[12,19],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3e8780f6-320c-4909-9f6a-5d42fdc9f180
+version: 1.0.0
+dataset_uuid: 989c61fb-4901-4809-8fdf-41dbc1404893

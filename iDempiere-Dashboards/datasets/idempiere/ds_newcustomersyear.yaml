@@ -1,0 +1,70 @@
+table_name: ds_newcustomersyear
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: adempiere
+sql: "select  o.ad_client_id AS ad_client_id,  to_number(to_char(o.dateordered, 'YYYY'),\
+  \ '9999')  AS year, count( distinct  bp.c_bpartner_id) new_bp_year\nfrom c_order\
+  \ o\nleft join c_bpartner bp on (bp.c_bpartner_id = o.c_bpartner_id  )\nwhere o.issotrx='Y'\n\
+  and o.docstatus in ('CO','CL')\nand to_char(bp.created, 'YYYY') =to_char(o.dateordered,\
+  \ 'YYYY')\nGROUP BY o.ad_client_id,  to_number(to_char(o.dateordered, 'YYYY'), '9999')\
+  \ \n\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 989c61fb-4901-4809-8fdf-41dbc1404893
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: ad_client_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: year
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: new_bp_year
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 3b8f34a8-35d7-44a1-ae58-d557f4a8dd59

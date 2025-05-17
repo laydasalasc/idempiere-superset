@@ -1,0 +1,68 @@
+table_name: DS_I_available_per_category
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: adempiere
+sql: "select o.ad_client_id\n      , pc.value ||'-'||pc.name AS \"Category\"\n   \
+  \   , sum(o.qtyavailable) AS \"Qty Available\"\nfrom rv_storage o\nleft join m_product_category\
+  \ pc on (o.m_product_category_id = pc.m_product_category_id)\ngroup by o.ad_client_id\n\
+  \        , pc.value ||'-'||pc.name"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: b97f35be-d4df-49a5-83ad-c3febf3a23d5
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: Qty Available
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: ad_client_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: Category
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 3b8f34a8-35d7-44a1-ae58-d557f4a8dd59

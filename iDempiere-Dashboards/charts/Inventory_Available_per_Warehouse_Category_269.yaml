@@ -1,0 +1,85 @@
+slice_name: Inventory Available per Warehouse / Category
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 77__table
+  viz_type: echarts_timeseries_bar
+  x_axis: Warehouse
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: Qty Available
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 1412
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(Qty Available)
+    optionName: metric_kxw09xc41i_loipmdhy9cj
+  groupby: []
+  adhoc_filters:
+  - expressionType: SQL
+    sqlExpression: ad_client_id = @ad_client_id
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_3i7ycg7zq8e_ynky0m6o9hb
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 18
+query_context: '{"datasource":{"id":77,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":"(ad_client_id
+  = @ad_client_id)"},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"Warehouse","label":"Warehouse","expressionType":"SQL"}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Qty
+  Available","description":null,"expression":null,"filterable":true,"groupby":true,"id":1412,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(Qty
+  Available)","optionName":"metric_kxw09xc41i_loipmdhy9cj"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Qty
+  Available","description":null,"expression":null,"filterable":true,"groupby":true,"id":1412,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(Qty
+  Available)","optionName":"metric_kxw09xc41i_loipmdhy9cj"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["Warehouse"],"columns":[],"aggregates":{"SUM(Qty
+  Available)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"77__table","viz_type":"echarts_timeseries_bar","x_axis":"Warehouse","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Qty
+  Available","description":null,"expression":null,"filterable":true,"groupby":true,"id":1412,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(Qty
+  Available)","optionName":"metric_kxw09xc41i_loipmdhy9cj"}],"groupby":[],"adhoc_filters":[{"expressionType":"SQL","sqlExpression":"ad_client_id
+  = @ad_client_id","clause":"WHERE","subject":null,"operator":null,"comparator":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_3i7ycg7zq8e_ynky0m6o9hb"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[18],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: d82b697f-2db1-42bb-b12a-4a9add4a40ea
+version: 1.0.0
+dataset_uuid: 521a3fc0-d082-4a68-ab48-62d56de7413c

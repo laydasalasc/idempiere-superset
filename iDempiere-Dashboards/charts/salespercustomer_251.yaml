@@ -1,0 +1,105 @@
+slice_name: salespercustomer
+description: null
+certified_by: null
+certification_details: null
+viz_type: dist_bar
+params:
+  datasource: 45__table
+  viz_type: dist_bar
+  slice_id: 251
+  metrics:
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: grandtotal
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 942
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(grandtotal)
+    optionName: metric_032zhx7j0ur_1zpryt9u2ey
+    sqlExpression: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_7pmwzt0eahu_c0n4f400v9b
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: ad_client_id = @ad_client_id
+    subject: null
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_yzacjpqctz9_pda57idvprf
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: year = @year
+    subject: null
+  groupby:
+  - bpname
+  columns: []
+  row_limit: 10
+  timeseries_limit_metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: grandtotal
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 942
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(grandtotal)
+    optionName: metric_nde6hlaaoxd_xkcu16c5wi
+    sqlExpression: null
+  order_desc: true
+  color_scheme: supersetColors
+  show_legend: true
+  rich_tooltip: true
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  bottom_margin: auto
+  x_ticks_layout: auto
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":45,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":"(ad_client_id
+  = @ad_client_id) AND (year = @year)"},"applied_time_extras":{},"columns":["bpname"],"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"grandtotal","description":null,"expression":null,"filterable":true,"groupby":true,"id":942,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(grandtotal)","optionName":"metric_032zhx7j0ur_1zpryt9u2ey","sqlExpression":null}],"annotation_layers":[],"row_limit":10,"series_limit":0,"series_limit_metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"grandtotal","description":null,"expression":null,"filterable":true,"groupby":true,"id":942,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(grandtotal)","optionName":"metric_nde6hlaaoxd_xkcu16c5wi","sqlExpression":null},"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"45__table","viz_type":"dist_bar","slice_id":251,"metrics":[{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"grandtotal","description":null,"expression":null,"filterable":true,"groupby":true,"id":942,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(grandtotal)","optionName":"metric_032zhx7j0ur_1zpryt9u2ey","sqlExpression":null}],"adhoc_filters":[{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_7pmwzt0eahu_c0n4f400v9b","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"ad_client_id
+  = @ad_client_id","subject":null},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_yzacjpqctz9_pda57idvprf","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"year
+  = @year","subject":null}],"groupby":["bpname"],"columns":[],"row_limit":10,"timeseries_limit_metric":{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"grandtotal","description":null,"expression":null,"filterable":true,"groupby":true,"id":942,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(grandtotal)","optionName":"metric_nde6hlaaoxd_xkcu16c5wi","sqlExpression":null},"order_desc":true,"color_scheme":"supersetColors","show_legend":true,"rich_tooltip":true,"y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"bottom_margin":"auto","x_ticks_layout":"auto","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: abce608c-b185-4fae-84fe-11a2a2723896
+version: 1.0.0
+dataset_uuid: d80ff879-03a4-4638-921f-a98accff439f
